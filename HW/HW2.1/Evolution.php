@@ -37,4 +37,9 @@ class Evolution {
     {
         return $this->mutation;
     }
+
+    public function simulate() {
+        $this->organism->evolve($this->env);
+        $this->organism->mutate($this->mutation);
+    }
 }
